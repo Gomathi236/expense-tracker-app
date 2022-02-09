@@ -1,0 +1,164 @@
+.btn{
+    width:100px;
+    height: 40px;
+    background-color: purple;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-left: 55px;
+    margin-top: 500px;
+   
+
+}
+.box{
+  
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  box-shadow: 0 0 15px #00000033;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 100px;
+  margin-top: 50px;
+  text-decoration: none;
+
+}
+.box img{
+  float: left;
+  height:100px;
+  width:100px;
+  overflow:hidden;
+  size: 30px;
+  margin-top:10px;
+  margin-right: 50px;
+}
+.box2{
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  box-shadow: 0 0 15px #00000033;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 100px;
+  margin-top: 50px;
+  float: left;
+  text-decoration: none;
+
+}
+.box2 img{
+    float: left;
+    height:100px;
+    width:100px;
+    overflow:hidden;
+   
+    margin-top:10px;
+    margin-right: 50px;
+
+  }
+
+h1{
+  display: block;
+  background-color:black;
+  margin: 0;
+  padding: 40px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  
+  
+}
+
+body{
+  margin: 0px;
+  background-color: whitesmoke;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:whitesmoke;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border: black;
+  
+  
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidebar a:hover {
+  color:purple;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-bottom: 500px;
+ 
+}
+
+.openbtn {
+  font-size: large;
+  cursor: pointer;
+  background-color:black;
+  color: white;
+  border: none;
+  float: left;
+  margin-bottom: 20px;
+  padding-right : 30px;
+}
+
+.openbtn:hover {
+  background-color:black;
+  
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 100px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#profile{
+  display: flex;
+  float: right;
+  
+  
+}
+.name{
+  margin: 0px 30px 4px;
+ 
+}
+#mychart{
+  margin-left: 70px;
+  margin-top: 60px;
+}

@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>INCOME</title>
+        <link rel="stylesheet" href="/public/css/income.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <script>
+       
+
+
+    </script>
+
+    
+    <body>
+        <h1 style = "font-family: 'Times New Roman', Times, serif;">SOURCE OF INCOME</h1><br/>
+       
+        <table>
+
+        <form method="POST" action="/income" class="form">
+           <tr> 
+              <td> 
+                  <label for="date" style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Date :</label><br/>
+                </td>
+              <td> 
+                   <input type="date" id="date" name="date" class="input-field">
+                </td>
+            </tr>
+            <br/>
+            <tr>
+                <td>
+                    <label style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Source Of Income :</label><br/>
+                </td>
+                <td>
+                  
+                    
+                   
+                     <select class="input-field" name="source" id="source">
+                         <option>
+                            <% income.forEach(function (income) { %>
+                          
+                                <%= income.type %>
+                                
+                                                            
+                         <% }) %> 
+
+                         </option>
+                         <option>Business Income</option>
+                          <option>Interest Income</option>  
+                           <option>Dividend Income</option> 
+                            <option>Income</option> 
+                            <option>Gains</option> 
+                     </select>
+                    
+                   &nbsp; &nbsp;&nbsp;<a href="/addsource"> <i class="fa fa-plus" id="add" style="font-size:24px"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="description" style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Description :</label><br/>
+                </td>
+                <td>
+                    <textarea class="input-field" name="description" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="amount" style = "font-family: 'Times New Roman font-weight: bolder;', Times, serif; font-weight: bolder;">Enter the Amount :</label><br/>
+                </td>
+                <td>
+                    <input type="number" id="amount" name="amount" class="input-field">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn" style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Save</button>
+
+                </td>
+               
+            </tr>
+        </form>
+        <td>
+            <a href="/home"><button class="btn" style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Cancel</button></a>
+
+           </td>
+        </table>
+   
+    </body>
+</html>
