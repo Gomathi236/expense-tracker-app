@@ -128,7 +128,7 @@ router.get("/home", function (req, res) {
 
 router.post("/expenses", function (req, res) {
   var date = req.body.date || null;
-  var category = req.body.Category || null;
+  var category = req.body.category || null;
   var description = req.body.description || null;
   var amount = req.body.amount || null;
   var created_at = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60 * 1000).toJSON().slice(0, 19).replace('T', ' ');
@@ -205,6 +205,11 @@ router.post ("/contactus",function(req,res){
     
   });
 });
+
+//balance
+router.get("/balance", function(req,res){
+  res.render("balance");
+})
 //track
 router.get("/track",function(req,res){
             res.render("track");

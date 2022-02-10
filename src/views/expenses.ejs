@@ -27,7 +27,10 @@
                     
                    
                  <select class="input-field" name="category" id="category">
+                   
+                   
                     <option>
+                        
                         <% expenses.forEach(function (expenses) { %>
                           
                         <%= expenses.name %>,<%= expenses.budget%>
@@ -36,6 +39,8 @@
                      <% }) %> 
 
                     </option>
+                    
+                    <option>fruits</option>
                     <option>Location cost</option> 
                     <option>Accounting and Banks expenses</option> 
                     <option>Education and training expenses</option> 

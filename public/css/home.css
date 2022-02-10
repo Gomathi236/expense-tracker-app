@@ -63,6 +63,32 @@
     margin-right: 50px;
 
   }
+.box3{
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  box-shadow: 0 0 15px #00000033;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 100px;
+  margin-top: 50px;
+  float: left;
+  text-decoration: none;
+
+}
+.box3 img{
+    float: left;
+    height:120px;
+    width:120px;
+    overflow:hidden;
+   
+    margin-top:10px;
+    margin-right: 50px;
+
+  }
 
 h1{
   display: block;
