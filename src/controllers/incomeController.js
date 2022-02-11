@@ -14,10 +14,7 @@
         }
                             
          });
-        
-
- }
-
+}
 module.exports = {
     getIncomePage:getIncomePage,
     getSource:getSource

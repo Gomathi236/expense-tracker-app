@@ -9,11 +9,8 @@
     border-radius: 5px;
     margin-left: 55px;
     margin-top: 500px;
-   
-
 }
 .box{
-  
   width: 500px;
   height: 200px;
   display: flex;
@@ -26,7 +23,6 @@
   margin-left: 100px;
   margin-top: 50px;
   text-decoration: none;
-
 }
 .box img{
   float: left;
@@ -98,10 +94,7 @@ h1{
   text-align: left;
   color: white;
   font-size: 20px;
-  
-  
 }
-
 body{
   margin: 0px;
   background-color: whitesmoke;
@@ -118,10 +111,7 @@ body{
   transition: 0.5s;
   padding-top: 60px;
   border: black;
-  
-  
 }
-
 .sidebar a {
   padding: 8px 8px 8px 8px;
   text-decoration: none;
@@ -131,11 +121,9 @@ body{
   transition: 0.3s;
 
 }
-
 .sidebar a:hover {
   color:purple;
 }
-
 .sidebar .closebtn {
   position: absolute;
   right: 25px;
@@ -144,7 +132,6 @@ body{
   margin-bottom: 500px;
  
 }
-
 .openbtn {
   font-size: large;
   cursor: pointer;
@@ -155,30 +142,22 @@ body{
   margin-bottom: 20px;
   padding-right : 30px;
 }
-
 .openbtn:hover {
   background-color:black;
   
 }
-
-
 #main {
   transition: margin-left .5s;
   padding: 16px;
   margin-left: 100px;
 }
-
-
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-
 #profile{
   display: flex;
-  float: right;
-  
-  
+  float: right;  
 }
 .name{
   margin: 0px 30px 4px;

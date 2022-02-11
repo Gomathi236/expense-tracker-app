@@ -17,11 +17,7 @@ let addSource = (req,res) =>{
         }
                             
          });
-        
-
- }
-
-
+}
 module.exports ={
     getsourcePage:getsourcePage,
     addSource:addSource

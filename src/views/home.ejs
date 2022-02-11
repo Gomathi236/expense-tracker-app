@@ -23,20 +23,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <body>
         <div>
-            
             <div>
-              
-               <h1> <button class="openbtn" onclick="openNav()"><b>☰</b></button>
+              <h1> <button class="openbtn" onclick="openNav()"><b>☰</b></button>
                 EXPENSE TRACKER SYSTEM
                 <a href="/profile"> <span class="fa fa-user-circle-o"  id="profile" style="font-size:30px " ></span></a>
                 <p id="profile" class="name" style="font-size: 20px;" >Welcome <%= user.fullname %></p> </h1>
-              
-              
-              
                 <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <li>
-                  
                 <ol><a href="/profile" style = "font-family: 'Times New Roman', Times, serif;"><i class='fas fa-user-alt'></i> &nbsp;&nbsp;Profile</a></ol>
                 <ol><a href="/contactus" style = "font-family: 'Times New Roman', Times, serif; "><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;contact</a></ol>
                 <ol><a href="/track" style = "font-family: 'Times New Roman', Times, serif; "><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Track</a></ol>
@@ -45,10 +39,7 @@
               </form>
                 </li>
               </div>
-              
-             
               </div>
-             
               <table>
                 <tr>
                   <td>
@@ -72,12 +63,7 @@
                     </div>
                   </td>
                 </tr>
-                
-               
-              
-
               </table>
-            
               <canvas id="myChart" style="width:100%;max-width:900px;"></canvas>
               <script>
                 var xValues = ["income","expenses"];

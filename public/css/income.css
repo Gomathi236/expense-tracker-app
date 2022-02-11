@@ -8,15 +8,6 @@
     outline: none;
     border: none;
 }
-
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(-45deg,whitesmoke);
-} */
-
 .box{
     width: 900px;
     height: 500px;
@@ -39,9 +30,6 @@
 }
 
 h1{
-    /* display: block;
-  padding: 8px;
-  background-color:plum; */
   margin: 0;
   padding: 30px;
   margin-top: 0px;

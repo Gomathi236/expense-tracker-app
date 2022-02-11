@@ -8,15 +8,6 @@
     outline: none;
     border: none;
 }
-
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(-45deg,whitesmoke);
-} */
-
 .box{
     width: 900px;
     height: 500px;
@@ -37,11 +28,7 @@
     flex-direction: column;
     
 }
-
 h1{
-    /* display: block;
-  padding: 8px;
-  background-color:plum; */
   margin: 0;
   padding: 30px;
   margin-top: 0px;
@@ -61,18 +48,15 @@ h1{
     height: 60px;
     border-radius: 5px;
     padding: 15px;
-  
     font-size: 1em;
     color: #000;
     background-color: plum;
-    
     border-color: black;
 }
 .input-field::placeholder{
     color: whitesmoke;
     border-color: black;
 }
-
 .btn{
     width:100px;
     height: 40px;
@@ -82,11 +66,7 @@ h1{
     font-size: 1em;
     margin-top: 15px;
     border-radius: 5px;
-   
 }
-
-
-
 table{
     margin-left: 50px;
    

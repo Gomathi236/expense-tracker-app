@@ -1,14 +1,11 @@
 import {validationResult} from "express-validator"
 import signupService from "../services/signupService"
-
-
 let getsignupPage = (req,res) =>{
     return res.render("signup.ejs",{
         errors: req.flash("errors")
     })
     
 }
-
 let createNewUser = async (req,res)=>{
     
     let errorsArr =[];

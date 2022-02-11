@@ -1,11 +1,7 @@
 let getLoginPage = (req,res)=>{
-
     return res.render("login.ejs",{
         errors: req.flash("errors")
     })
-
-
-
 };
 let handleLogin = async (req, res) => {
     let errorsArr = [];
