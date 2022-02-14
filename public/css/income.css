@@ -60,6 +60,23 @@ h1{
     color: whitesmoke;
     border-color: black;
 }
+.input-field1{
+    width:230px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1em;
+    color: #000;
+    background-color: plum;
+    /* letter-spacing: 1px; */
+    border-color: black;
+
+}
+.input-field::placeholder{
+    color: whitesmoke;
+    border-color: black;
+}
 
 .btn{
     width:100px;

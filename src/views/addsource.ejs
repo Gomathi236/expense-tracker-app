@@ -5,14 +5,27 @@
         </title>
         <link rel="stylesheet" href="/public/css/addsource.css">
     <script>
-
+         
         window.addEventListener('load',()=>{
         const params = (new URL(document.location)).searchParams;
         let type = params.get('type');
         document.getElementById("source").innerHTML = type;
 
         })
+        
 
+        function save(){
+            var new_data = document.getElementById("type").value;
+            if(localStorage.getItem('data') == null){
+                localStorage.setItem('data', '[]');
+            }    
+
+            var old_data = JSON.parse(localStorage.getItem('data'));
+            old_data.push(new_data);
+
+            localStorage.setItem('data', JSON.stringify(old_data) );
+        }
+       
     </script>
     </head>
     <body>
@@ -28,7 +41,7 @@
            </tr>
             <tr>
             <td>
-                <button type="submit"  class="btn" style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Save</button>
+                <button type="submit" onclick="save();"  class="btn" style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Save</button>
             </td>
             </tr>
         </form>

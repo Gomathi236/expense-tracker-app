@@ -76,13 +76,16 @@ router.post('/income', function(req, res) {
 });
 
 
+
 //addsource
 
 router.get("/addsource", (req, res) => {
   res.render("addsource");
+  
 });
 
 router.get("/income",addsourceController.addSource)
+
 
 
 router.post("/addsource", function (req, res) {
@@ -141,10 +144,7 @@ router.post("/expenses", function (req, res) {
   connection.query(sql, function (err,data ) {
     if (err) throw err;
     console.log("User data is inserted successfully "); 
-
     req.flash("success", "Data added successfully!");
-   
-    
   });
   res.redirect("/home")
   

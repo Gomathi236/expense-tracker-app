@@ -22,23 +22,20 @@
                     <label style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Source Of Income :</label><br/>
                 </td>
                 <td>
-                     <select class="input-field" name="source" id="source">
-                         <option>
-                            <% income.forEach(function (income) { %>
-                          
-                                <%= income.type %>
-                                
-                                                            
-                         <% }) %> 
+                    <select class="input-field1" name="source" id="source">
+                         
+                        <option>
+                            
+                           <% income.forEach(function (income) { %>
+                         
+                               <%= income.type %>
+                               
+                                                           
+                        <% }) %> 
 
-                            </option>
-                            <option >Salary</option>
-                         <option>Business Income</option>
-                          <option>Interest Income</option>  
-                           <option>Dividend Income</option> 
-                            <option>Income</option> 
-                            <option>Gains</option> 
-                     </select>
+                           </option>
+                         
+                    </select>
                     
                    &nbsp; &nbsp;&nbsp;<a href="/addsource"> <i class="fa fa-plus" id="add" style="font-size:24px"></i></a>
                 </td>
