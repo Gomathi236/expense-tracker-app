@@ -42,6 +42,7 @@ router.get('/income', function(req, res){
       if (err) throw err;
       console.log(result);
     });
+    
   
 
     connection.query('SELECT * FROM income_type ORDER BY id DESC LIMIT 1', function(err, result) {
