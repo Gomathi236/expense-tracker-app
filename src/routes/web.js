@@ -37,6 +37,13 @@ router.post("/signup", auth.validateSignup, signupController.createNewUser);
 var obj = {};
 router.get('/income', function(req, res){
 
+  
+    connection.query("SELECT source FROM income", function (err, result, fields) {
+      if (err) throw err;
+      console.log(result);
+    });
+  
+
     connection.query('SELECT * FROM income_type ORDER BY id DESC LIMIT 1', function(err, result) {
 
         if(err){

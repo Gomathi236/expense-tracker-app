@@ -23,6 +23,17 @@
                 </td>
                 <td>
                     <select class="input-field1" name="source" id="source">
+
+                       
+                            <% for(var i=0; i < income.length; i++) { %>
+                                <option>
+                                    
+                                 <%= income[i].source %>
+                                 
+                                </option>
+                             <% } %>
+
+                       
                          
                         <option>
                             
@@ -33,6 +44,13 @@
                                                            
                         <% }) %> 
 
+                           </option>
+                           <option>
+                               <% income.forEach(function(income) { %>
+
+                                    <%= income.type %>
+
+                              <% }) %>
                            </option>
                          
                     </select>
