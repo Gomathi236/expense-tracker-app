@@ -27,24 +27,16 @@
                     
                    
                  <select class="input-field1"  name="category" id="category">
-                   <option>
-                        
-                        <% expenses.forEach(function (expenses) { %>
-                          
-                        <%= expenses.name %>,<%= expenses.budget%>
-                            
-                                                        
-                     <% }) %> 
-
+                     <option>--Select--</option>
+                 
+                    <% name.forEach(function (na) { %>
+                        <option>
+                        <%= na.name + ',' + na.budget %>
                     </option>
-                    
-                    <!-- <option>fruits</option>
-                    <option>Location cost</option> 
-                    <option>Accounting and Banks expenses</option> 
-                    <option>Education and training expenses</option> 
-                    <option>Office expenses</option> 
-                    <option>Office supplies</option> 
-                    <option>Business Insurance Expenses</option>  -->
+                    <% }) %> 
+
+                 
+                  
                 </select>
                     
                    &nbsp; &nbsp;&nbsp;<a href="/category"> <i class="fa fa-plus" id="add" style="font-size:24px"></i></a>

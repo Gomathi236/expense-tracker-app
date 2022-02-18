@@ -35,25 +35,17 @@ router.post("/signup", auth.validateSignup, signupController.createNewUser);
 //income
 
 var obj = {};
-router.get('/income', function(req, res){
 
-  
-    connection.query("SELECT source FROM income", function (err, result, fields) {
-      if (err) throw err;
-      console.log(result);
-    });
-    
-  
-
-    connection.query('SELECT * FROM income_type ORDER BY id DESC LIMIT 1', function(err, result) {
-
-        if(err){
-            throw err;
-        } else {
-            obj = {income: result};
-            res.render('income', obj);                
-        }
-    });
+router.get('/income', function(req, res){   
+  connection.query("SELECT type FROM expense_database.income_type", function (err, result, fields) {
+    if (err){
+      throw err;
+    } else{
+      res.render('income' ,{ name : result});    
+      console.log(result); 
+    }
+   
+  });
 
 });
 
@@ -92,6 +84,7 @@ router.get("/addsource", (req, res) => {
   
 });
 
+
 router.get("/income",addsourceController.addSource)
 
 
@@ -120,17 +113,16 @@ console.log(created_at);
 //expenses
 var obj = {};
 router.get('/expenses', function(req, res){
+  connection.query('SELECT name,budget FROM expense_database.expense_type ', function(err, result) {
 
-    connection.query('SELECT * FROM expense_type ORDER BY id DESC LIMIT 1 ', function(err, result) {
-
-        if(err){
-            throw err;
-        } else {
-            obj = {expenses: result};
-            res.render('expenses', obj);                
-        }
-    });
-
+    if (err){
+      throw err;
+    } else{
+      res.render('expenses' ,{ name : result});    
+      console.log(result); 
+    }
+   
+  });
 });
 
 router.get("/home", function (req, res) {

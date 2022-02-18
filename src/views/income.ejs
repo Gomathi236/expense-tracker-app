@@ -23,36 +23,14 @@
                 </td>
                 <td>
                     <select class="input-field1" name="source" id="source">
+                        <option>--Select--</option>
 
                        
-                            <% for(var i=0; i < income.length; i++) { %>
-                                <option>
-                                    
-                                 <%= income[i].source %>
-                                 
-                                </option>
-                             <% } %>
-
-                       
-                         
-                        <option>
-                            
-                           <% income.forEach(function (income) { %>
-                         
-                               <%= income.type %>
-                               
-                                                           
+                        <% name.forEach(function (na) { %>
+                            <option>
+                            <%= na.type %>
+                        </option>
                         <% }) %> 
-
-                           </option>
-                           <option>
-                               <% income.forEach(function(income) { %>
-
-                                    <%= income.type %>
-
-                              <% }) %>
-                           </option>
-                         
                     </select>
                     
                    &nbsp; &nbsp;&nbsp;<a href="/addsource"> <i class="fa fa-plus" id="add" style="font-size:24px"></i></a>
@@ -81,6 +59,8 @@
                 </td>
                
             </tr>
+             
+       
         </form>
         <td>
             <a href="/home"><button class="btn" style = "font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Cancel</button></a>
